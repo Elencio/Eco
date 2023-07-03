@@ -1,13 +1,8 @@
-import { Input} from 'antd';
 import React from 'react';
-import { BsSearch } from 'react-icons/bs';
 import styled from 'styled-components';
 
-const { Search } = Input;
 
 
-
-const onSearch = (value: string) => console.log(value);
 
 const Container = styled.div`
   max-width: 1400px;
@@ -58,11 +53,6 @@ const Title = styled.span`
   line-height: 160%;
 `;
 
-const StyledSearch = styled(Search)`
-  max-width: 500px;
-  border: 0;
-  border-radius: 0;
-`;
 
 const Invite: React.FC = () => (
   <Container>
