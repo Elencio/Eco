@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -6,7 +7,9 @@ export const HeaderContainer = styled.header`
   gap: 4rem;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 6rem;
+  max-width: 1400px;
+width: 900px;
+margin: 1rem auto;
 `;
 
 export const Logo = styled.h1`
@@ -50,11 +53,13 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled(NavLink)`
   text-decoration: none;
   margin-right: 15px;
   color: #111111;
   font-weight: 500;
+  text-decoration: none;
+  
   &:last-child {
     margin-right: 0;
   }

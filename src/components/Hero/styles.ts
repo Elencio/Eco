@@ -1,32 +1,39 @@
 import styled from 'styled-components';
 
 export const ComponentContainer = styled.div`
-display: flex;
-flex-direction: column;
-gap: 1rem;
-margin: 3rem 6rem;
-
-strong {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 0.5rem;
-  border-radius: 4px;
-  background-color: #1B1B1B;
-  width: 120px;
-  height: 50px;
-  color: #fff;
-}
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+flex-direction: row;
+grid-gap: 5rem;
+max-width: 1400px;
+width: 900px;
+margin: 2rem auto;
 `;
 
 
 export const ContainerText = styled.div`
+margin-top: 1rem;
 display: flex;
-gap: 3rem;
+gap: 1rem;
 flex-direction: column;
-height: 195px;
+
+span {
+  text-align: justify;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+}
+
+button {
+  width: 100px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #222;
+}
 
 `;
 
@@ -44,10 +51,7 @@ export const Description = styled.p`
 `;
 
 export const CardContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  margin-top: 20px;
+ 
 `;
 
 export const Card = styled.div`
@@ -58,6 +62,7 @@ export const Card = styled.div`
   padding: 20px;
   border-radius: 6px;
   height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   span {
     background-color: #e60023;

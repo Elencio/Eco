@@ -1,25 +1,18 @@
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
-import Header from "./components/Header";
-import Component from "./components/Hero";
-import Footer from "./components/Footer";
-import About from "./components/Talks";
-import Invite from "./components/Invite";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router";
+
 
 
 export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <>
+      <BrowserRouter>
       <GlobalStyle />
-      <Header />
-      <Component />
-      <About />
-      <Invite />
-      <Footer />
-  
-      </>
+       <Router />
+      </BrowserRouter>
      
     </ThemeProvider>
   )

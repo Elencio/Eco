@@ -1,4 +1,4 @@
-import { HeaderContainer, NavItem, Navigation, Nav } from "./styles"
+import { HeaderContainer, Nav, NavItem } from "./styles"
 import Logo from "../assets/Logo.svg"
 
 
@@ -7,11 +7,7 @@ const Header = () => {
     <HeaderContainer>
       <img src={Logo} alt="" />
       <Nav>
-        <Navigation>
-          <NavItem href="#">Home</NavItem>
-          <NavItem href="#">Sobre</NavItem>
-          <NavItem href="#">Contato</NavItem>
-        </Navigation>
+        <NavItem to="/Sobre">Sobre</NavItem>
         <span>Assinar Newsletter</span>
       </Nav>
 
