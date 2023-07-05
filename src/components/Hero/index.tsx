@@ -13,7 +13,7 @@ const Component = () => {
         </Description>
 
         <span>
-          Elencio Calado e o meu nome, e sou um desenvolvedor Junior, que busca a primorar mais as minhas capacidades como desenvolver, um dos meus passatempos e imaginar. Se tiver alguma ideia ou comentário, o faca no LinkedIn page.
+          Elêncio Calado é o meu nome, e sou um desenvolvedor Júnior, busco aprimorar mais as minhas capacidades como desenvolver. Um dos meus passatempos é imaginar. Se tiver alguma ideia ou comentário, faça-o no LinkedIn page.
         </span>
 
         <button>Ir</button>
