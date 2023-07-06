@@ -61,6 +61,7 @@ export const Card = styled.div`
   gap: 1rem;
   padding: 20px;
   border-radius: 6px;
+  max-width: 400px;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -70,7 +71,7 @@ export const Card = styled.div`
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    width: 100px;
+    max-width: 120px;
     padding: 0.5rem 0.5rem;
     border-radius: 4px;
     color: #fff;
@@ -112,4 +113,18 @@ export const Technology = styled.li`
   border-radius: 4px;
   margin-right: 5px;
   margin-bottom: 5px;
+`;
+
+export const Button = styled.a`
+  width: 100px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #222;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;

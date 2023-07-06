@@ -1,9 +1,9 @@
-import { Card, CardContainer, CardDescription, CardTitle, ComponentContainer, Description, Title, Technologies, Technology, ContainerText } from "./styles"
+import { Card, CardContainer, CardDescription, CardTitle, ComponentContainer, Description, Title, Technologies, Technology, ContainerText, Button } from "./styles"
 
 
 const Component = () => {
 
-  const technologies = ["Css", "Typescript", "HTML"];
+  const technologies = ["Styled-components", "Typescript", "HTML"];
   return (
     <ComponentContainer>
       <ContainerText>
@@ -16,19 +16,21 @@ const Component = () => {
           Elêncio Calado é o meu nome, e sou um desenvolvedor Júnior, busco aprimorar mais as minhas capacidades como desenvolver. Um dos meus passatempos é imaginar. Se tiver alguma ideia ou comentário, faça-o no LinkedIn page.
         </span>
 
-        <button>Ir</button>
+        <Button href="https://www.linkedin.com/company/juniorchalenge/?viewAsMember=true">
+          Ir
+        </Button>
       </ContainerText>
       <CardContainer>
 
         <Card>
-          <CardTitle>Página de Destino Responsiva</CardTitle>
+          <CardTitle>Consumir dados atraves de contextApi</CardTitle>
           <CardDescription> Desenvolva uma página de destino responsiva que promova um produto ou serviço específico</CardDescription>
           <Technologies>
             {technologies.map((technology, index) => (
               <Technology key={index}>{technology}</Technology>
             ))}
           </Technologies>
-          <span>Concluído</span>
+          <span>em progresso</span>
           <img src="https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
         </Card>
 
