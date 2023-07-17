@@ -1,5 +1,5 @@
 import { HeaderContainer, Nav, NavItem } from "./styles"
-import Logo from "../assets/Logo.svg"
+import Logo from "../assets/Logo.png"
 
 
 const Header = () => {
@@ -8,7 +8,6 @@ const Header = () => {
       <img src={Logo} alt="" />
       <Nav>
         <NavItem to="/Sobre">Sobre</NavItem>
-        <span>Assinar Newsletter</span>
       </Nav>
 
     </HeaderContainer>

@@ -5,7 +5,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterText>
         © {new Date().getFullYear()} FrontStack. Todos os direitos reservados. Desenvolvido por{' '}
-        <FooterLink href="https://www.exemplo.com">Elencio Zivane</FooterLink>.
+        <FooterLink >Elencio Zivane</FooterLink>.
       </FooterText>
     </FooterContainer>
   );

@@ -6,12 +6,12 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterText = styled.p`
-  color: #333;
+  color: #c4c4c4;
   font-size: 14px;
 `;
 
-export const FooterLink = styled.a`
-  color: #333;
+export const FooterLink = styled.span`
+  color: #c4c4c4;
   text-decoration: none;
 
   &:hover {
