@@ -6,7 +6,7 @@ export const ComponentContainer = styled.div`
   grid-gap: 5rem;
   max-width: 1400px;
   width: 900px;
-  margin: 2rem auto;
+  margin: 3rem auto;
 
   @media (max-width: 768px) {
     width: 100%;

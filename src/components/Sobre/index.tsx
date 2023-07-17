@@ -1,10 +1,9 @@
-import { SobreContainer, Titulo, Descricao } from "./styles"
+import { SobreContainer, Descricao } from "./styles"
 
 
 export default function Sobre() {
   return (
     <SobreContainer>
-      <Titulo>Sobre</Titulo>
       <Descricao>
         <span>
           Bem-vindo à nossa plataforma de desafios de frontend para juniores! Aqui, fornecemos uma oportunidade emocionante para os desenvolvedores juniores aprimorarem suas habilidades em desenvolvimento web.

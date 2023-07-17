@@ -1,15 +1,12 @@
-import { HeaderContainer, Nav, NavItem } from "./styles"
+import { HeaderContainer, NavItem } from "./styles"
 import Logo from "../assets/Logo.png"
 
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <img src={Logo} alt="" />
-      <Nav>
+      <img src={Logo} alt="" width='40px' />
         <NavItem to="/Sobre">Sobre</NavItem>
-      </Nav>
-
     </HeaderContainer>
   );
 };
