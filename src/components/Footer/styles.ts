@@ -6,8 +6,10 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterText = styled.p`
-  color: #c4c4c4;
+  color: #111111;
   font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
 `;
 
 export const FooterLink = styled.span`

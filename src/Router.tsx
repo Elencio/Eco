@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
 import Sobre from "./components/Sobre";
+// import Gap from "./components/Experimental";
+import Home from "./components/Home/Home";
 
 export default function Router() {
   return (
