@@ -1,11 +1,11 @@
 import Header from '../Header'
-import User from '../User'
+import LinkedInPage from '../Linkedin-Page'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <User />
+      <LinkedInPage />
     </>
   )
 }
