@@ -1,10 +1,28 @@
 import { ContainerRightSide, RightSide } from './styles'
 import { BiPencil } from 'react-icons/bi'
-import { BsFillPersonPlusFill } from 'react-icons/bs'
+import {
+  BsFillPersonPlusFill,
+  BsCheckCircle,
+  BsClockFill,
+} from 'react-icons/bs'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { FaLock } from 'react-icons/fa'
+import { useState } from 'react'
+
+interface ButtonStates {
+  [key: string]: string
+}
 
 export function RightSidePage() {
+  const [buttonStates, setButtonStates] = useState<ButtonStates>({})
+
+  const handleButtonClick = (id: string) => {
+    setButtonStates((prevState) => ({
+      ...prevState,
+      [id]: prevState[id] === 'connected' ? 'pending' : 'connected',
+    }))
+  }
+
   return (
     <RightSide>
       <ContainerRightSide>
@@ -50,9 +68,18 @@ export function RightSidePage() {
           <div id="content">
             <strong>Diogo Pinto . 2</strong>
             <span>Software developer | PHP | SQL</span>
-            <button id="connect">
-              <BsFillPersonPlusFill size={16} />
-              <span>Conectar</span>
+            <button id="connect" onClick={() => handleButtonClick('pietro')}>
+              {buttonStates.pietro === 'connected' ? (
+                <>
+                  <BsClockFill size={16} />
+                  <span>Pendente</span>
+                </>
+              ) : (
+                <>
+                  <BsFillPersonPlusFill size={16} />
+                  <span>Conectar</span>
+                </>
+              )}
             </button>
           </div>
         </div>
@@ -82,9 +109,18 @@ export function RightSidePage() {
           <div id="content">
             <strong>Pietro . 2</strong>
             <span>Software developer | PHP | SQL</span>
-            <button id="connect">
-              <AiOutlinePlus size={16} />
-              <span>Seguir</span>
+            <button id="connect" onClick={() => handleButtonClick('pedro')}>
+              {buttonStates.pedro === 'connected' ? (
+                <>
+                  <BsCheckCircle size={16} />
+                  <span>Seguindo</span>
+                </>
+              ) : (
+                <>
+                  <AiOutlinePlus size={16} />
+                  <span>Seguir</span>
+                </>
+              )}
             </button>
           </div>
         </div>
@@ -98,9 +134,18 @@ export function RightSidePage() {
           <div id="content">
             <strong>Antonia Barros . 2</strong>
             <span>Software developer | ReactJs | NodeJs</span>
-            <button id="connect">
-              <BsFillPersonPlusFill size={16} />
-              <span>Conectar</span>
+            <button id="connect" onClick={() => handleButtonClick('antonio')}>
+              {buttonStates.antonio === 'connected' ? (
+                <>
+                  <BsClockFill size={16} />
+                  <span>Pendente</span>
+                </>
+              ) : (
+                <>
+                  <BsFillPersonPlusFill size={16} />
+                  <span>Conectar</span>
+                </>
+              )}
             </button>
           </div>
         </div>
@@ -114,9 +159,18 @@ export function RightSidePage() {
           <div id="content">
             <strong>Sorten Paulo . 2</strong>
             <span>Backend developer | SpringBoot | Java | MySQL</span>
-            <button id="connect">
-              <AiOutlinePlus size={16} />
-              <span>Seguir</span>
+            <button id="connect" onClick={() => handleButtonClick('paulo')}>
+              {buttonStates.paulo === 'connected' ? (
+                <>
+                  <BsCheckCircle size={16} />
+                  <span>Seguindo</span>
+                </>
+              ) : (
+                <>
+                  <AiOutlinePlus size={16} />
+                  <span>Seguir</span>
+                </>
+              )}
             </button>
           </div>
         </div>

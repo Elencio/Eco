@@ -37,6 +37,11 @@ export const Resources = styled.div`
     gap: 1rem;
   }
 
+  #title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
   #info {
     display: flex;
     flex-direction: row;
@@ -62,6 +67,12 @@ export const Resources = styled.div`
     gap: 0.5rem;
     justify-content: center;
     padding: 0.5rem;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+
+  #content:hover {
+    background-color: #ccc;
   }
 
   #content span {

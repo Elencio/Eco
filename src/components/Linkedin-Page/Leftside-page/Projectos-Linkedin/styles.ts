@@ -17,6 +17,12 @@ export const Projetos = styled.section`
     flex-direction: row;
     justify-content: space-between;
   }
+  #options {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
 
   #projeto-01 {
     display: flex;

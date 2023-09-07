@@ -9,7 +9,7 @@ export function FormacaoLinkedIn() {
   return (
     <Formação>
       <div id="Degree-Header">
-        <strong>Formação Académica</strong>
+        <strong id="title">Formação Académica</strong>
 
         <div id="options">
           <AiOutlinePlus size={32} />

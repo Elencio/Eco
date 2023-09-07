@@ -11,6 +11,12 @@ export const Formação = styled.section`
 
   h2 {
     font-size: 1rem;
+    color: #474139;
+  }
+
+  strong {
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 
   #Degree-Header {
@@ -23,6 +29,11 @@ export const Formação = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  #title {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 
   #degrees span {

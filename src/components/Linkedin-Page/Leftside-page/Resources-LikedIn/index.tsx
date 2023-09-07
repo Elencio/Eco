@@ -7,7 +7,7 @@ export function ResourcesLinkedIn() {
   return (
     <Resources>
       <div id="header">
-        <strong>Recursos</strong>
+        <strong id="title">Recursos</strong>
         <span id="item">
           <AiOutlineEye />
           Exibido apenas a voce

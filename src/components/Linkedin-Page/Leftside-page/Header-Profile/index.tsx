@@ -9,10 +9,18 @@ import {
   OptionInfo,
   ContentInfo,
   ProfileContentHeader,
+  DropContent,
+  ItemContent,
+  DropButton,
+  DropButtonMore,
 } from './styles'
 import { BiPencil } from 'react-icons/bi'
 import { SiAdobe } from 'react-icons/si'
 import { FcGoogle } from 'react-icons/fc'
+import { RiShareForward2Line } from 'react-icons/ri'
+import { MdSaveAlt } from 'react-icons/md'
+import { BsFillInfoSquareFill } from 'react-icons/bs'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 export function HeaderProfile() {
   return (
@@ -61,19 +69,53 @@ export function HeaderProfile() {
         <p>12.456 seguidores + 500 conexões</p>
 
         <Tags>
-          <span
-            style={{
-              backgroundColor: '#2376c8',
-              color: '#ffffff',
-              fontWeight: '600',
-            }}
-          >
-            Tenho interesse em..
-          </span>
+          <DropdownMenu.Root>
+            <DropButton>Tenho interesse em..</DropButton>
+            <DropContent>
+              <ItemContent>
+                <strong>Prestar servicos</strong>
+                <p>
+                  Destaque os seus servicos que voce oferece para que os novos
+                  clientes possam descobrir voce
+                </p>
+              </ItemContent>
+              <ItemContent>
+                <strong>Contratar</strong>
+                <p>
+                  Compartilhe que voce esta contratando e atraia candidatos
+                  qualificados
+                </p>
+              </ItemContent>
+            </DropContent>
+          </DropdownMenu.Root>
+
           <span style={{ color: '#2376c8', fontWeight: '600' }}>
             Adicionar secção de perfil
           </span>
-          <span style={{ color: '#333', fontWeight: '600' }}>Mais</span>
+
+          <DropdownMenu.Root>
+            <DropButtonMore>Mais</DropButtonMore>
+            <DropContent>
+              <ItemContent>
+                <p>
+                  <RiShareForward2Line size={24} />
+                  Enviar perfil em uma mensagem
+                </p>
+              </ItemContent>
+              <ItemContent>
+                <p>
+                  <MdSaveAlt size={24} />
+                  Salvar como pdf
+                </p>
+              </ItemContent>
+              <ItemContent>
+                <p>
+                  <BsFillInfoSquareFill size={24} />
+                  Sobre este perfil
+                </p>
+              </ItemContent>
+            </DropContent>
+          </DropdownMenu.Root>
         </Tags>
 
         <OptionInfo>
@@ -88,9 +130,9 @@ export function HeaderProfile() {
 
           <ContentInfo>
             <div id="information">
-              <strong>Buscando Emprego</strong>
-              <span>Cargos de Estagiaria de desenvolvimento web..</span>
-              <a href="#">Exibir detalhes</a>
+              <strong>Destaque os serviços</strong>
+              <span>que voce oferece para que as pessoas possam ...</span>
+              <a href="#">comece ja</a>
             </div>
             <span>X</span>
           </ContentInfo>

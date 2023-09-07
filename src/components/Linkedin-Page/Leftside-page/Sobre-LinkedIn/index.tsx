@@ -6,7 +6,7 @@ export function SobreLinkedIn() {
   return (
     <Sobre>
       <div id="SobreHeader">
-        <strong>Sobre</strong>
+        <strong id="title">Sobre</strong>
         <BiPencil size={32} />
       </div>
 

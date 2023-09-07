@@ -22,6 +22,11 @@ export const Sobre = styled.section`
     justify-content: space-between;
   }
 
+  #title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
   #content {
     border-radius: 6px;
     border: 1px solid #ccc;

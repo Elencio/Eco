@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 export const ProfileContentHeader = styled.div`
   border: 1px solid #ccc;
@@ -64,7 +65,7 @@ export const Tags = styled.div`
   span {
     padding: 2px 10px;
     border-radius: 16px;
-    border: 1px solid blue;
+    border: 1px solid #2376c8;
   }
 `
 export const OptionInfo = styled.div`
@@ -156,4 +157,70 @@ export const Employee = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+`
+export const DropContent = styled(DropdownMenu.Content)`
+  max-width: 250px;
+  margin-left: 6rem;
+  margin-top: 0.6rem;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow:
+    0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+`
+
+export const ItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  strong {
+    border: none;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 700;
+    color: #333;
+  }
+
+  p {
+    color: #595959;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+`
+
+export const DropButton = styled(DropdownMenu.Trigger)`
+  background-color: #2376c8;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: 1px solid #2376c8;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+
+  :hover {
+    background-color: #165f9c;
+  }
+`
+
+export const DropButtonMore = styled(DropdownMenu.Trigger)`
+  color: #333;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: 1px solid #333;
+  font-size: 1rem;
+  cursor: pointer;
+
+  :focus {
+    box-shadow: 0 0 0 1px #333;
+  }
 `

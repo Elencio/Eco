@@ -1,6 +1,30 @@
-import { BiPencil, BiLike } from 'react-icons/bi'
-import { BsFillHeartFill, BsArrowRight } from 'react-icons/bs'
-import { Atividades } from './styles'
+import { BiPencil, BiLike, BiCalendar, BiTimeFive } from 'react-icons/bi'
+import {
+  BsFillHeartFill,
+  BsFillCaretDownFill,
+  BsArrowRight,
+  BsXLg,
+  BsThreeDots,
+} from 'react-icons/bs'
+import { GiSevenPointedStar } from 'react-icons/gi'
+import { AiOutlinePicture } from 'react-icons/ai'
+import {
+  Atividades,
+  ContentMain,
+  DialogContent,
+  Button,
+  ContentHeader,
+  Perfil,
+  ContentImage,
+  Image,
+  Info,
+  Buttons,
+  StyledButton,
+  Option,
+} from './styles'
+
+import * as Avatar from '@radix-ui/react-avatar'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export function AtividadesLinkedIn() {
   return (
@@ -8,16 +32,61 @@ export function AtividadesLinkedIn() {
       <div id="container">
         <div id="TaskHeader">
           <div id="content">
-            <strong>Atividades</strong>
+            <strong id="title">Atividades</strong>
             <p style={{ color: '#2376c8', fontWeight: '600' }}>
               12.456 seguidores
             </p>
           </div>
 
           <div id="options">
-            <span style={{ color: '#2376c8', fontWeight: '600' }}>
-              Criar publicação
-            </span>
+            <Dialog.Root>
+              <Button>Criar publicação</Button>
+              <Dialog.Portal>
+                <ContentMain />
+                <DialogContent>
+                  <ContentHeader>
+                    <Perfil>
+                      <ContentImage>
+                        <Image
+                          src="https://images.pexels.com/photos/6801642/pexels-photo-6801642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt=""
+                        />
+                        <Avatar.Fallback />
+                      </ContentImage>
+                      <Info>
+                        <strong>Bryn Vogue</strong>
+                        <span>Publicar em Todos</span>
+                      </Info>
+                      <BsFillCaretDownFill size={24} color="#333" />
+                    </Perfil>
+                    <Dialog.Close asChild>
+                      <BsXLg size={24} color="#333" />
+                    </Dialog.Close>
+                  </ContentHeader>
+
+                  <span id="Text">No que esta pensando?</span>
+
+                  <Buttons>
+                    <StyledButton>
+                      <AiOutlinePicture size={24} color="#333" />
+                    </StyledButton>
+                    <StyledButton>
+                      <BiCalendar size={24} color="#333" />
+                    </StyledButton>
+                    <StyledButton>
+                      <GiSevenPointedStar size={24} color="#333" />
+                    </StyledButton>
+                    <StyledButton>
+                      <BsThreeDots size={24} color="#333" />
+                    </StyledButton>
+                  </Buttons>
+                  <Option>
+                    <BiTimeFive size={24} color="#333" />
+                    <span>Publicar</span>
+                  </Option>
+                </DialogContent>
+              </Dialog.Portal>
+            </Dialog.Root>
             <BiPencil size={32} />
           </div>
         </div>
@@ -53,7 +122,7 @@ export function AtividadesLinkedIn() {
             </div>
             <div id="icons">
               <BiLike />
-              <BsFillHeartFill />
+              <BsFillHeartFill color="red" />
               <span>210</span>
             </div>
           </div>
@@ -74,7 +143,7 @@ export function AtividadesLinkedIn() {
             </div>
             <div id="icons">
               <BiLike />
-              <BsFillHeartFill />
+              <BsFillHeartFill color="red" />
               <span>810</span>
             </div>
           </div>
@@ -95,7 +164,7 @@ export function AtividadesLinkedIn() {
             </div>
             <div id="icons">
               <BiLike />
-              <BsFillHeartFill />
+              <BsFillHeartFill color="red" />
               <span>810</span>
             </div>
           </div>
